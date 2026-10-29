@@ -1,0 +1,26 @@
+{
+  "active_host": "web1",
+  "defaults": {
+    "port": 22,
+    "username": "deploy",
+    "auth_method": "key",
+    "host_key_policy": "strict",
+    "connect_timeout": 10,
+    "command_timeout": 120
+  },
+  "hosts": {
+    "web1": {
+      "host": "10.0.0.10",
+      "key_path": "~/.ssh/id_ed25519",
+      "default_dir": "/opt/app/example",
+      "tags": ["web", "test"],
+      "description": "Example web server"
+    },
+    "db1": {
+      "host": "10.0.0.20",
+      "key_path": "~/.ssh/id_ed25519",
+      "tags": ["db"],
+      "description": "Example database server"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# Local secrets and runtime state — never commit
+config.json
+config-*.json
+*.bak
+*.tmp
+*.log
+__pycache__/
+*.pyc
+.linux-ops/
+.DS_Store
